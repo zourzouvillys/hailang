@@ -103,7 +103,7 @@ public class HaiScriptChildStreamProvider extends HaiScriptVisitor<Void, Stream<
 
   @Override
   public Stream<HaiScriptNode> visitEmitStatement(HaiScriptEmitStatement stmt, Void arg) {
-    return Stream.of(stmt.getEntries().stream().map(x -> Stream.of(x.getArgs(), x.getReducer(), x.getSymbol())));
+    return stmt.getEntries().stream().flatMap(x -> Stream.of(x.getArgs(), x.getReducer(), x.getSymbol()));
   }
 
   @Override
