@@ -13,10 +13,7 @@ abstract class BinaryTypeRef implements TypeRef {
 
     INTERSECT("&"), UNION("|"), DISJOINT("~");
 
-    private String op;
-
     TypeOperator(String op) {
-      this.op = op;
     }
 
   }

@@ -14,9 +14,7 @@ import io.zrz.hai.lang.antlr4.HaiLexer;
 import io.zrz.hai.lang.antlr4.HaiParser;
 import io.zrz.hai.lang.antlr4.HaiParser.CompilationUnitContext;
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 class LanguageUtils {
 
   @SneakyThrows

@@ -4,7 +4,6 @@ import java.nio.file.Path;
 
 import com.google.common.base.Stopwatch;
 
-import io.zrz.hai.lang.antlr4.HaiParser.CompilationUnitContext;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
@@ -44,7 +43,8 @@ public class LanguageService {
 
     try {
 
-      final CompilationUnitContext tree = LanguageUtils.parse(ctx);
+      // final CompilationUnitContext tree =
+      LanguageUtils.parse(ctx);
 
       return null;
 
